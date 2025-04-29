@@ -1,7 +1,8 @@
 body {
   width: 100%;
   padding: 16px;
-  font-size: 20px;
+  font-size: 28px;
+  margin: 0;
   font-family: Arial, sans-serif;
   background-color: #EBEBEB;
 }
@@ -20,7 +21,7 @@ body {
   width: 100%;
   padding: 15px;
   background-color: #010D26;
-  font-size: 20px;
+  font-size: 28px;
   color: white;
   border: none;
   cursor: pointer;
@@ -67,8 +68,7 @@ body {
 }
 
 .file-input {
-  flex: 1;
-  
+  margin: 15px 0;
   text-align: center;
 }
 
@@ -78,7 +78,6 @@ body {
 
 .file-input label {
   padding: 15px;
-  width: 100%;
   background-color: #010D26;
   color: white;
   cursor: pointer;
@@ -86,14 +85,14 @@ body {
 }
 
 .clear-emails-button {
-  flex: 1;
   width: 100%;
   padding: 15px;
-  font-size: 20px;
+  font-size: 28px;
   background-color: #044BD9;
   color: white;
   border: none;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .email-counter {
@@ -103,10 +102,3 @@ body {
   margin-top: 10px;
 } 
 
-.button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 80px;
-
-}
