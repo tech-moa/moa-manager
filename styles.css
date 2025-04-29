@@ -100,5 +100,51 @@ body {
   text-align: center;
   color: #666;
   margin-top: 10px;
+}
+
+.input-container {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.sheets-button {
+  padding: 8px 15px;
+  background-color: #010D26;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sheets-button:hover {
+  background-color: #3367d6;
+}
+
+/* Nuevo estilo para el botón Load Sheet */
+.file-input-style {
+  padding: 8px 15px;
+  font-size: 28px;
+  background-color: #010D26;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.file-input-style:hover {
+  background-color: #1976D2;
+}
+
+/* Ajustar el botón Clear Emails para que tome el ancho completo */
+.clear-emails-button {
+  width: 100%;
 } 
 

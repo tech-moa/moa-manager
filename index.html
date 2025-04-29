@@ -21,15 +21,19 @@
    
   </div>
 
-  <div class="file-input">
-    <label for="csvFile">UPLOAD CSV</label>
-    <input type="file" id="csvFile" accept=".csv">
+  <div class="input-container">
+    <input type="text" id="sheetsUrl" placeholder="Paste Google Sheets URL">
+    <button id="loadSheets" class="file-input-style">LOAD CSV</button>
   </div>
-
-  <button id="clearEmailsButton" class="clear-emails-button">CLEAR EMAILS</button>
+  <div class="bottom-buttons">
+    <div class="file-input" style="display: none;">
+      <label for="csvFile">UPLOAD FILE</label>
+      <input type="file" id="csvFile" accept=".csv,.xlsx">
+    </div>
+    <button id="clearEmailsButton" class="clear-emails-button">CLEAR EMAILS</button>
+  </div>
   
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html> 
