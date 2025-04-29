@@ -1,0 +1,112 @@
+body {
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #EBEBEB;
+}
+
+.header-text {
+  text-align: center;
+  font-weight: bold;
+  margin: 5px 0 15px 0;
+}
+
+.button-container {
+  margin-bottom: 15px;
+}
+
+.redirect-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #010D26;
+  font-size: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.containerEmailList {
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  padding: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.email-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.email-item:hover {
+  background-color: #f5f5f5;
+}
+
+.email-item.checked {
+  background-color: #e8f5e9;
+}
+
+.email-item.copied {
+  background-color: #e3f2fd;
+}
+
+.check-icon {
+  color: #4CAF50;
+  display: none;
+}
+
+.email-item.checked .check-icon {
+  display: inline;
+}
+
+.file-input {
+  flex: 1;
+  
+  text-align: center;
+}
+
+.file-input input[type="file"] {
+  display: none;
+}
+
+.file-input label {
+  padding: 15px;
+  width: 100%;
+  background-color: #010D26;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.clear-emails-button {
+  flex: 1;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #044BD9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.email-counter {
+ 
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+} 
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+
+}
