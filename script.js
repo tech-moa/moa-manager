@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadState();
 
   document.getElementById('redirectButton').addEventListener('click', () => {
-    window.open('https://usen.oshireq.com/song/6547677', '_blank');
+    window.open('https://usen.oshireq.com/song/6561406', '_blank');
   });
 
   document.getElementById('clearEmailsButton').addEventListener('click', clearEmailsList);
