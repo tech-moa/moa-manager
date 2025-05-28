@@ -146,5 +146,34 @@ body {
 /* Ajustar el botón Clear Emails para que tome el ancho completo */
 .clear-emails-button {
   width: 100%;
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.config-button {
+  padding: 8px;
+  background-color: #1976D2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.song-selector {
+  margin-top: 10px;
+}
+
+.song-selector select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
 } 
 

@@ -184,12 +184,48 @@ async function fetchGoogleSheetsData(url) {
   }
 }
 
+// Función para guardar y cargar la canción seleccionada
+function saveSongChoice(songId) {
+  localStorage.setItem('selectedSong', songId);
+}
+
+function loadSongChoice() {
+  return localStorage.getItem('selectedSong') || '6561406'; // LOLA como default
+}
+
+// Función para obtener la URL completa
+function getSongUrl(songId) {
+  return `https://usen.oshireq.com/song/${songId}`;
+}
+
 // Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
   loadState();
 
-  document.getElementById('redirectButton').addEventListener('click', () => {
-    window.open('https://usen.oshireq.com/song/6561406', '_blank');
+  const configButton = document.getElementById('configButton');
+  const songSelector = document.getElementById('songSelector');
+  const songChoice = document.getElementById('songChoice');
+  const redirectButton = document.getElementById('redirectButton');
+
+  // Cargar la selección guardada
+  songChoice.value = loadSongChoice();
+
+  // Toggle del selector
+  configButton.addEventListener('click', () => {
+    songSelector.style.display = songSelector.style.display === 'none' ? 'block' : 'none';
+  });
+
+  // Guardar la selección y actualizar el botón
+  songChoice.addEventListener('change', (e) => {
+    const selectedSong = e.target.value;
+    saveSongChoice(selectedSong);
+    songSelector.style.display = 'none';
+  });
+
+  // Actualizar el redirect button para usar la canción seleccionada
+  redirectButton.addEventListener('click', () => {
+    const selectedSong = loadSongChoice();
+    window.open(getSongUrl(selectedSong), '_blank');
   });
 
   document.getElementById('clearEmailsButton').addEventListener('click', clearEmailsList);

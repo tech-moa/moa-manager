@@ -13,7 +13,19 @@
   <p class="header-text">EMAIL MOA-NAGER</p>
   
   <div class="button-container">
-    <button id="redirectButton" class="redirect-button">GO TO VOTE 🔗</button>
+    <div class="vote-buttons">
+      <button id="redirectButton" class="redirect-button">GO TO VOTE 🔗</button>
+      <button id="configButton" class="config-button">⚙️</button>
+    </div>
+    <div id="songSelector" class="song-selector" style="display: none;">
+      <select id="songChoice">
+        <option value="6485005">OVER THE MOON</option>
+        <option value="6561406">LOVE LANGUAGE</option>
+        <option value="6547677">RISE</option>
+        <option value="6561144">STEP BY STEP</option>
+        <option value="6549294">PANIC</option>
+      </select>
+    </div>
   </div>
   <p id="emailCounter" class="email-counter"></p>
   <div class="containerEmailList">
